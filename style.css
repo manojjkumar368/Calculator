@@ -1,0 +1,86 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Poppins',sans-serif;
+}
+body{
+    width:100%;
+    height:100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(45deg,#f6f1f1,#e8f5a7);
+}
+.container{
+    border-radius: 20px;
+    border: 1px #717377 solid;
+   background-color:#3a4452;
+    box-shadow: -8px -8px 15px rgba(13, 9, 9, 0.222);
+    padding: 20px;
+}
+.Screen{
+    height: 100px;
+
+    padding: 20px;
+}
+input{
+    width: 350px;
+    background-color: transparent;
+    margin-bottom: 5px;
+    font-size: 30px;
+    text-align: right;
+        color:aliceblue ;
+        border-radius: 10px;
+        outline: none;
+       
+}
+input::placeholder{
+    color: aliceblue;
+}
+
+button{
+    height: 60px;
+    width: 60px;
+    border: none;
+    margin: 10px;
+    border-radius: 25%;
+    background: #1f2937;
+    color:#f6f1f1;
+    box-shadow: -8px -8px 15px rgba(206, 199, 199, 0.222);
+    background-color:#374151;
+    font-size: 20px;
+    cursor: pointer;
+    text-decoration: none;
+
+}
+button:hover{
+    /* background-color:#717377; */
+    transform:scale(1.05);
+    filter: brightness(1.5);
+    
+}
+button::selection{
+    background-color: #c6c5c5;
+}
+.button_op{
+    color: #fff;
+    background-color: #14b8a6;
+}
+button:active{
+    transform: scale(0.98);
+}
+@media screen and (max-width: 600px){
+    .body{
+
+    
+    width:100%;
+    }
+    input{
+        width: 250px;
+    }
+    button{
+        width: 40px;
+        height: 40px;
+    }
+}
